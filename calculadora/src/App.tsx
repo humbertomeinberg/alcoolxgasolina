@@ -10,8 +10,8 @@ interface InfoProps{
 }
 
 function App() {
-  const [gasolinaInput, setGasolinaInput] = useState(0)
-  const [alcoolInput, setAlcoolInput] = useState(0)
+  const [gasolinaInput, setGasolinaInput] = useState<number>(0)
+  const [alcoolInput, setAlcoolInput] = useState<number>(0)
   const [info, setInfo] = useState<InfoProps>()
 
   function calcular(event: FormEvent){
